@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ProductDetails from "./productComponents/ProductDetails.jsx";
-import Related from "./relatedComponents/Related.jsx";
+
 
 class App extends React.Component {
   render() {
@@ -9,16 +8,10 @@ class App extends React.Component {
       <Router>
         <Link to="/someproductID">Product</Link>
         <Switch>
-          <Route path="/someproductID">
-            {/* <App /> */}
-
-            <ProductDetails />
-            <Related />
-          </Route>
+          <Route path="/someproductID"></Route>
         </Switch>
       </Router>
     );
-    //  <div>app here</div>;
   }
 }
 
